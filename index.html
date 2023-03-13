@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio - Alima</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Ali" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ali">Ali Mahdavi</h1>
+
+          <p class="title">Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:alimahdavi.na@gmail.com" class="contact-link">alimahdavi.na@gmail.com</a>
+            </div>
+
+          </li>
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">1999</time>
+            </div>
+
+          </li>
+		  
+        </ul>
+
+        <div class="separator"></div>
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+		A computer engineering graduate student who is interested in data science and computational mathematics.Having worked on new ML techniques
+		like FL in IoT and Advertising tech. Dedicated to software engineering, having more than 2 years of expertise, and specialising in back‑end web
+		development, software architecture and patterns, and machine learning.
+          </p>
+
+          <p>
+		I was actively building up an advertising technology startup, dealing with different retargeting technologies and I came across the novel approaches
+		of privacy preserved advertising, like the usage of Federated Learning. Also, I have worked on the ways of distributed software scaling and 
+		I'm completely familiar with Kubernetes HPA, Reactive Programming Patterns, Distributed Database Management and Event Driven Programming via the usage of Spark Streaming. 
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Linux System Administration</h4>
+
+                <p class="service-item-text">
+                  I had kernel compiled my own distro when I was at high school :D
+				  That project got nominated in 2015 World Summit Awards for a world competetion
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">ML/AI Predictive Analysis</h4>
+
+                <p class="service-item-text">
+                  I have used RF regression algorithms for predicting critical temperature, while optimizing the model hyper parameters and doing K-folds for
+				  cross validation. The hyper parameters where based on two search approaches, grid search and random search. The result will be published
+				  in a paper within the next month. Also, I have done Wavelet/Signal processings and I'm interested in Attention-LSTM 
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">IoT</h4>
+
+                <p class="service-item-text">
+                  As the new advertising constraints by google and apple has been announced, I was interested on researching the ways of improving advertising
+				  targeting accuracy by the usage of federated learning. FL and its usecases, especially asynchronous and semiasynchronous approaches
+				  within stochastic gradient descent grabbed my attention very much. Hence, a paper concerning the usage pf FL in predictive modeling will be
+				  published within the next month.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-quote.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Ad Click Probability Prediction and Markov Chain for attribution modeling</h4>
+
+                <p class="service-item-text">
+                  I have done a predictive modeling for analyzing the probability of click per each user. The whole process consisted of a decision tree, for checking
+				  the most related ads to each user,then publishing the bucket into the Elasticsearch. Whenever the user sent
+				  a Bid Request (ORTB 2.5), the ad will be served and based on the CTR history and the user behavior,I have researched the usage of Markov Chains for attribution modelings.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Azad University Science and Research Branch Tehran</h4>
+
+              <span>2021 — 2023</span>
+
+              <p class="timeline-text">
+                Master of Science -- Computer Engineering, GPA 3.8/4.0, Courses: Parallel Computing, Advanced Algorithms, Seminar, Advanced Software Engineering, Advanced Networks, Distributed Computing,
+				Advanced Software Patterns, Software Performance Analysis
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Azad University Central Tehran Branch</h4>
+
+              <span>2016 — 2021</span>
+
+              <p class="timeline-text">
+				BSc of Computer Engineering GPA : 3.45/4.0
+				Selected for Industrial Cooperation with the most prestigious startup accelerator in Iran among 400 students                omnis..
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Amirkabir University Innovation Center - StartUp Camper</h4>
+
+              <span>2020</span>
+
+              <p class="timeline-text">
+                As our team got accepted out of many participant teams, we launched a referral marketing automation platform with the goal of managing
+				affiliate links and automating commissions and gifting processes (Like Referral Candy, We Gift, CJ, etc.) ‑ Built and lead a team of 4 people
+				to develop, and support a real‑time marketing automation platform ‑ Managing the deployment and architecture design for supporting high
+				concurrency ‑ Created a complete CI/CD pipeline for the development team ‑ Managed a fault tolerance deployment with K8s HPA ‑ Enhanced
+				RDBMS performance for handling A/B/n referral links
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
